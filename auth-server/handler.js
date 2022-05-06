@@ -3,7 +3,7 @@ const OAuth2 = google.auth.OAuth2;
 const calendar = google.calendar("v3");
 
 /**
- * Scopes allows you to set access levels: this is set to readonly for now because you don't have acxcess rights to update the calendard yourself. for more info check out: https://developers.google.com/identity/protocols/oauth2/scopes
+ * Scopes allows you to set access levels: this is set to readonly for now because you don't have acxcess rights to update the calendar yourself. for more info check out: https://developers.google.com/identity/protocols/oauth2/scopes
  */
 
 const SCOPES = ["https://googleapis.com/auth/calendar.readonly"];
