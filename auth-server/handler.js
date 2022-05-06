@@ -6,7 +6,7 @@ const calendar = google.calendar("v3");
  * Scopes allows you to set access levels: this is set to readonly for now because you don't have acxcess rights to update the calendar yourself. for more info check out: https://developers.google.com/identity/protocols/oauth2/scopes
  */
 
-const SCOPES = ["https://googleapis.com/auth/calendar.readonly"];
+const SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
 
 /**
  * Credentials are those values required to get access to you calendar. IF you see "process.env" this means the value is in the config.json file. This is a best practice as it keeps your API secrets hidden. Please remember to add config.json to you .gitignore file.
