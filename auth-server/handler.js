@@ -19,8 +19,8 @@ const credentials = {
   auth_uri: "https://accounts.google.com/o/oauth2/auth",
   token_uri: "https://oauth2.googleapis.com/token",
   auth_provider_x509_cert_url: "https://googleapis.com/oauth2/v1/certs",
-  redirect_uris: ["https://Beecer.github.io/meet/"],
-  javascript_origins: ["https://Beecer.github.io", "http://localhost:3000"],
+  redirect_uris: ["https://beecer.github.io/meet/"],
+  javascript_origins: ["https://beecer.github.io", "http://localhost:3000"],
 };
 const { client_secret, client_id, redirect_uris, calendar_id } = credentials;
 const oAuth2Client = new google.auth.OAuth2(
@@ -36,6 +36,7 @@ const oAuth2Client = new google.auth.OAuth2(
  */
 
 module.exports.getAuthURL = async () => {
+  
   /**
    * 
    * Scopes array passsed to the `scope` option. Any scopes passed must be enabled in the "OAuth consent screen" settings in your project ob you Google Console. Also, any passed scopes are the ones users will see when the consent screen is displayed to them.
